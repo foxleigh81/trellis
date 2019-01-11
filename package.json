@@ -11,6 +11,13 @@
   },
   "author": "Alex Foxleigh <alex@alexfoxleigh.com>",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/foxleigh81/trellis"
+  },
+  "bugs": {
+    "url": "https://github.com/foxleigh81/trellis/issues"
+  },
   "dependencies": {
     "chalk": "^2.4.2",
     "dotenv": "^6.2.0",

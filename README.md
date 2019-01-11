@@ -4,6 +4,9 @@
 
 A node cli app which takes a list of cards from a trello list
 
+> **PLEASE NOTE**  
+> This package is currently failing, please take a look at our [github issue](https://github.com/foxleigh81/trellis/issues/5) for more updates
+
 ## Installation instructions
 
 in your command line, type `npm install -g @foxleigh81/trellis`
@@ -18,9 +21,14 @@ In your command line type `trellis`.
 
 By default it will only look for lists named `Todo`. However you can edit the `listNameArray` variable in `index.js` to add, edit any lists you like (case-sensitive)
 
-## Roadmap
+## Example
 
-1. Create a config file, this will make installation easier and make specifying lists easier as it will all be done in the config file
-2. Show a useful error message if the auth token isn't valid / has expired. Currently it just errors out the app
-3. Allow users to exclude boards
-4. Create a version which outputs a JSON object instead of a console.log
+![Screenshot](example.png)
+
+## Roadmap and Issues
+
+This is a pretty new project and is still unfinished and buggy. If you spot any issues, please log them here:
+
+https://github.com/foxleigh81/trellis/issues
+
+This is also a good place to go if you are interested in seeing what features I'm planning next.
