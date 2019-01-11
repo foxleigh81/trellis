@@ -4,16 +4,18 @@
 
 A node cli app which takes a list of cards from a trello list
 
-> **PLEASE NOTE**  
-> This package is currently failing, please take a look at our [github issue](https://github.com/foxleigh81/trellis/issues/5) for more updates
-
 ## Installation instructions
 
 in your command line, type `npm install -g @foxleigh81/trellis`
 
-Then navigate to your global `node_modules` folder and copy `sample.env` renaming it to just `.env`
+Visit http://trello.com/app-key and get your API key and App Token (manually generated)
 
-Visit http://trello.com/app-key and get your API key and App Token (manually generated) and update the keys in your new .env file
+Back in the command line type:
+
+```bash
+  $ export API_KEY=[your api key]
+  $ export APP_TOKEN=[your app token]
+```
 
 ## Usage
 
