@@ -6,8 +6,11 @@ const Trello = require('trello')
 const chalk = require('chalk')
 const terminalLink = require('terminal-link')
 
+// TODO: Add error state if token is rejected
+
 const trello = new Trello(process.env.API_KEY, process.env.APP_TOKEN)
 const listNameArray = ['Todo']
+
 trello.makeRequest('get', '/1/members/me/boards', {}, function(err, boards) {
   boards.forEach(board => {
     if (!board.closed) {
