@@ -24,6 +24,14 @@ In your command line type `trellis`.
 
 By default it will only look for lists named `Todo`. However you can edit the `getLists` area in `~/.trellis/config.json` to add, edit or delete any lists you like.
 
+### One shot list view
+
+If you want to look at a specific set of lists but you don't want to see them all the time (for example you want to see all of your "Backlog" lists just this once) then you can specify the list using the `--list` flag.
+
+e.g. `trellis --list "Backlog"`
+
+Note: The quotation marks are not strictly needed if the list name is only one word.
+
 ## Example
 
 ![Screenshot](example.png)
