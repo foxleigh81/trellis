@@ -7,6 +7,7 @@ const fs = require('fs')
 const Trello = require('trello')
 const config = require('nconf')
 const chalk = require('chalk')
+const argv = require('yargs').argv
 const terminalLink = require('terminal-link')
 
 // TODO: Add error state if token is rejected
@@ -27,7 +28,7 @@ if (!fs.existsSync(configPath)) {
 const configData = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 
 const trello = new Trello(configData.appKey, configData.appToken)
-const listNameArray = configData.getLists
+const listNameArray = (argv.list) ? [argv.list] : configData.getLists
 
 trello.makeRequest('get', '/1/members/me/boards', {}, function(err, boards) {
   boards.forEach(board => {
