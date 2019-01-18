@@ -13,8 +13,8 @@ Visit http://trello.com/app-key and get your API key and App Token (manually gen
 Back in the command line type:
 
 ```bash
-  $ export API_KEY=[your api key]
-  $ export APP_TOKEN=[your app token]
+  export API_KEY=[your api key]
+  export APP_TOKEN=[your app token]
 ```
 
 ## Usage
@@ -34,3 +34,7 @@ This is a pretty new project and is still unfinished and buggy. If you spot any 
 https://github.com/foxleigh81/trellis/issues
 
 This is also a good place to go if you are interested in seeing what features I'm planning next.
+
+## Thanks and Acknowledgements
+
+Inspiration and a fair bit of configuration code for this project came from https://github.com/mheap/trello-cli
