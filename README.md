@@ -12,16 +12,17 @@ Visit http://trello.com/app-key and get your API key and App Token (manually gen
 
 Back in the command line type:
 
-```bash
-  export API_KEY=[your api key]
-  export APP_TOKEN=[your app token]
-```
+`trellis`
+
+This will initialise the config file, which you will be able to find in your home directory under the `.trellis` folder (If you are on mac, you can find this file at `~/.trellis/config.json`).
+
+Edit `config.json` and add your `API_KEY` and `APP_TOKEN` which you retreived earlier. At this point, you can also add any lists you would like to appear in `getLists`, please note that they need to match your Trello lists perfectly, make sure you preserve case, spacing and any punctuation/symbols your list may use.
 
 ## Usage
 
 In your command line type `trellis`.
 
-By default it will only look for lists named `Todo`. However you can edit the `listNameArray` variable in `index.js` to add, edit any lists you like (case-sensitive)
+By default it will only look for lists named `Todo`. However you can edit the `getLists` area in `~/.trellis/config.json` to add, edit or delete any lists you like.
 
 ## Example
 
@@ -37,4 +38,4 @@ This is also a good place to go if you are interested in seeing what features I'
 
 ## Thanks and Acknowledgements
 
-Inspiration and a fair bit of configuration code for this project came from https://github.com/mheap/trello-cli
+Inspiration and some of the configuration code for this project came from https://github.com/mheap/trello-cli

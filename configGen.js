@@ -12,9 +12,8 @@ exports.createEmptyConfig = function(cdir) {
   }
   var template = {
     appKey: "YOURAPIKEY",
-    configPath: cdir + "/",
-    authCache: "authentication.json",
-    translationCache: "translations.json"
+    appToken: "YOURAPITOKEN",
+    getLists : ["Todo"]
   };
   fs.writeFileSync(cpath, JSON.stringify(template, null, 4));
   console.log("Blank configuration file saved to: " + cpath);
