@@ -25,5 +25,8 @@
     "terminal-link": "^1.2.0",
     "trello": "^0.9.1",
     "yargs": "^12.0.5"
+  },
+  "peerDependencies" : {
+    "trello": "^0.9.1"
   }
 }
