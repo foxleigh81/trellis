@@ -1,6 +1,6 @@
 {
   "name": "@foxleigh81/trellis",
-  "version": "1.2.4-alpha.0",
+  "version": "1.2.4",
   "description": "A node app which will list items from your trello boards",
   "main": "index.js",
   "bin": {
