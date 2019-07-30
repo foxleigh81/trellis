@@ -32,6 +32,10 @@ e.g. `trellis --list "Backlog"`
 
 Note: The quotation marks are not strictly needed if the list name is only one word.
 
+### Excluding boards
+
+The default operation of Trellis is to show all of your boards which have lists matching the 'getLists' array, however you can limit the output of trellis by excluding boards from the results, this is done by added the name of your board to `excludedBoards` in `~/.trellis/config.json`. As before; case, spacing and punctuation/symbols must be exact.
+
 ## Example
 
 ![Screenshot](example.png)
