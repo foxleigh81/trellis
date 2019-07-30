@@ -1,8 +1,9 @@
 # Trellis
 
 [![npm version](http://img.shields.io/npm/v/@foxleigh81/trellis.svg?style=flat)](https://npmjs.org/package/@foxleigh81/trellis "View this project on npm")
+![npm](https://img.shields.io/npm/dt/@foxleigh81/trellis)
 
-A node cli app which takes a list of cards from a trello list
+A node cli app which outputs a list of every card in a specified list on all your trello boards.
 
 ## Installation instructions
 
@@ -24,6 +25,10 @@ In your command line type `trellis`.
 
 By default it will only look for lists named `Todo`. However you can edit the `getLists` area in `~/.trellis/config.json` to add, edit or delete any lists you like.
 
+Each list item is clickable (depending on your OS, you may need to press a modifier key to open a terminal link) and will take you to the correct card on your Trello profile. 
+
+If you have checklists on your card, they will be displayed next to the item in square brackets, e.g. [3/7], this shows that 3 items have been completed out of 7 total.
+
 ### One shot list view
 
 If you want to look at a specific set of lists but you don't want to see them all the time (for example you want to see all of your "Backlog" lists just this once) then you can specify the list using the `--list` flag.
@@ -38,7 +43,7 @@ The default operation of Trellis is to show all of your boards which have lists 
 
 ## Example
 
-![Screenshot](example.png)
+![Screenshot](example.gif)
 
 ## Roadmap and Issues
 
